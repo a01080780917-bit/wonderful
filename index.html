@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>분실물 찾기 시스템</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔍 분실물 찾기 시스템</h1>
+  <p>학교에서 잃어버린 물건을 쉽게 찾자!</p>
+</header>
+
+<section class="upload-section">
+  <h2>📦 분실물 등록</h2>
+
+  <input type="text" id="itemName" placeholder="분실물 이름 입력">
+
+  <select id="category">
+    <option value="">카테고리 선택</option>
+    <option>전자기기</option>
+    <option>필기구</option>
+    <option>가방</option>
+    <option>의류</option>
+    <option>기타</option>
+  </select>
+
+  <input type="text" id="location" placeholder="발견 장소 입력">
+
+  <input type="text" id="contact" placeholder="연락처 또는 이메일">
+
+  <input type="file" id="imageInput" accept="image/*">
+
+  <button onclick="uploadItem()">등록하기</button>
+</section>
+
+<section class="items-section">
+  <h2>📋 등록된 분실물</h2>
+
+  <div id="itemsContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
